@@ -1,0 +1,19 @@
+:root {
+    /*==== Couleurs ====*/
+    --color-blue: #2871b9;
+    --color-white: #def3ff;
+    --color-black: #000000;
+
+    /*==== Typographie ====*/
+    --font-size-sm: 1.4rem;
+    --font-size-base: 1.8rem;
+    --font-size-lg: 2rem;
+    --font-size-h1: 3.2rem;
+    --font-size-h2: 2.6rem;
+    --font-size-h3: 2.2rem;
+
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+}
