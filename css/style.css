@@ -212,3 +212,66 @@ header {
 .hero-img.active {
     opacity: 1;
 }
+
+/*=============================================
+    4.  FLOATING BUTTON
+=============================================*/
+
+/* Texte caché par défaut */
+.fab {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 999;
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+    padding: var(--space-sm) var(--space-md);
+    background: var(--color-blue);
+    border-radius: 999px;
+    
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    text-decoration: none;
+    
+    transition: all .35s ease;
+}
+
+.fab img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.fab span {
+    max-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+
+    color: var(--color-white);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium) ;
+
+    opacity: 0;
+    transition: all .35s ease;
+}
+
+/* Hover = texte visible */
+.fab:hover span {
+    max-width: 220px;
+    opacity: 1;
+}
+
+/* Micro feedback */
+.fab:hover {
+    background: var(--color-blue);
+    transform: translateY(-2px);
+}
+
+/* Mobile : icône seule */
+@media (max-width: 768px) {
+    .fab span {
+        display: none;
+    }
+}
