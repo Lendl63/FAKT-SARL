@@ -1,7 +1,7 @@
 :root {
     /*==== Couleurs ====*/
     --color-blue: #2871b9;
-    --color-white: #def3ff;
+    --color-white: #fdfdfd;
     --color-black: #000000;
 
     /*==== Typographie ====*/
@@ -16,4 +16,95 @@
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
+
+    /*==== Ombres & Bordures ====*/
+    --shadow-soft: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.15);
+    --shadow-strong: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+    --border-radius-sm: 0.6rem;
+    --border-radius-md: 1.2rem;
+    --border-radius-lg: 2rem;
+    --border-radius-pill: 50px 50px 50px 50px;
+    --border-radius-round: 50%;
+
+    /*==== Espacements ====*/
+    --space-xxs: 0.4rem;
+    --space-xs: 0.8rem;
+    --space-sm: 1.2rem;
+    --space-md: 1.6rem;
+    --space-lg: 2.4rem;
+    --space-xl: 3.2rem;
+    --space-xxl: 4.8rem;
+}
+
+/*==================================
+// 1. BASIC STYLES
+==================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--color-white);
+    font-size: var(--font-size-base);
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-black);
+    margin: 0;
+    padding: 0;
+
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Images et vidéos fluides */
+img, video {
+  max-width: 100%;
+  height: auto;
+  contain: content;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-xl) var(--space-lg);
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-black);
+    margin-bottom: var(--space-md);
+    margin-top: var(--space-xxl);
+    text-align: center;
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-black);
+    margin-bottom: var(--space-md);
+    text-align: center;
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-black);
+    margin-bottom: var(--space-md);
+    text-align: center;
+}
+
+p {
+    font-size: var(--font-size-base);
+    padding: var(--space-xs);
 }
