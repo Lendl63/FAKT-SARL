@@ -335,16 +335,18 @@ header {
 }
 
 /*=============================================
-    8. TRADE SECTION 
+    8. TRADE SECTION & ACTIVITIE SECTION
 =============================================*/
-.trade-contain {
+.trade-contain,
+.activitie-contain {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-md);
     padding: var(--space-xl);
 }
 
-.trade-card {
+.trade-card,
+.activitie-card {
     display: grid;
     grid-template-columns: 40% 60%;
     overflow: hidden;
@@ -353,12 +355,19 @@ header {
     transition: transform 0.4s ease-in-out;
 }
 
-.trade-card:hover {
+.trade-card:hover,
+.activitie-card:hover {
     transform: translateY(-5px);
 }
 
-.trade-card > img {
+.trade-card > img,
+.activitie-card > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.trade-card > div,
+.activitie-card > div {
+    padding-inline: var(--space-sm);
 }
