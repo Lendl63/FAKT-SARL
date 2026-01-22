@@ -295,3 +295,41 @@ header {
 .text-about > p {
     margin: var(--space-xs);
 }
+
+/*=============================================
+    7. COMMITMENT SECTION 
+=============================================*/
+.commitment-contain {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--space-lg);
+    padding-inline: var(--space-sm);
+}
+
+.commitment-contain > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in;
+}
+
+.commitment-contain > div:hover {
+    transform: scale(1.01);
+}
+
+.commitment-card {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    gap: var(--space-xs);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-medium);
+    overflow: hidden;
+}
+
+
+.image-contain > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
