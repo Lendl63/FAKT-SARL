@@ -33,7 +33,7 @@
     <!-- Theme Color -->
     <meta name="theme-color" content="#2871b9">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-responsive.css">
     <title>FAKT SARL - Construction & BTP Yaoundé</title>
 
     <script defer src="js/script.js"></script>
@@ -61,7 +61,7 @@
                     <p>faktsarl.info@gmail.com</p>
                 </div>
             </div>
-            <div class="header-nav">
+            <div class="header-nav" id="header-nav">
                 <a href="#about" class="nav-link">À propos</a>
                 <a href="#commitment" class="nav-link">Engagement</a>
                 <a href="#trade" class="nav-link">Métiers</a>
@@ -70,7 +70,30 @@
                 <a href="#contact" class="nav-link">Nous contacter</a>
             </div>
         </div>
+        <!-- Menu Burger Mobile -->
+        <button class="burger-menu" id="burger-menu" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
+
+    <!-- Mobile Menu Modal -->
+    <nav class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-content">
+            <button class="close-menu" id="close-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+            <a href="#about" class="mobile-nav-link">À propos</a>
+            <a href="#commitment" class="mobile-nav-link">Engagement</a>
+            <a href="#trade" class="mobile-nav-link">Métiers</a>
+            <a href="#activitie" class="mobile-nav-link">Activités</a>
+            <a href="#products-services" class="mobile-nav-link">Produits et services</a>
+            <a href="#contact" class="mobile-nav-link">Nous contacter</a>
+        </div>
+    </nav>
 
     <!--main-->
     <main>
