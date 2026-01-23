@@ -562,3 +562,151 @@ footer {
         font-size: 1.2rem;
     }
 }
+
+/*=============================================
+    11. CONTACT SECTION
+=============================================*/
+
+.contact {
+    background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--space-xl);
+    max-width: 1200px;
+    width: 100%;
+    margin-top: var(--space-lg);
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+}
+
+.info-card {
+    background: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-medium);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-strong);
+}
+
+.info-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--color-blue) 0%, #1a5fa0 100%);
+    border-radius: var(--border-radius-round);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    margin-bottom: var(--space-md);
+}
+
+.info-card h3 {
+    color: var(--color-black);
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-sm);
+}
+
+.info-card p {
+    color: #666666;
+    font-size: var(--font-size-sm);
+    margin: var(--space-xs) 0;
+    padding: 0;
+}
+
+.info-card a {
+    color: var(--color-blue);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.info-card a:hover {
+    color: #1a5fa0;
+    text-decoration: underline;
+}
+
+.contact-hours {
+    background: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-medium);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-hours h2 {
+    color: var(--color-black);
+    text-align: center;
+    margin-bottom: var(--space-lg);
+}
+
+.hours-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.hour-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: var(--space-md);
+    border-left: 4px solid var(--color-blue);
+    background: #f9f9f9;
+    border-radius: var(--border-radius-sm);
+}
+
+.hour-item .day {
+    font-weight: var(--font-weight-bold);
+    color: var(--color-black);
+}
+
+.hour-item .time {
+    text-align: right;
+    color: var(--color-blue);
+    font-weight: var(--font-weight-medium);
+}
+
+/*=============================================
+    RESPONSIVE CONTACT
+=============================================*/
+
+@media (max-width: 1024px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    .hour-item {
+        grid-template-columns: 1fr;
+        gap: var(--space-sm);
+    }
+
+    .hour-item .time {
+        text-align: left;
+    }
+}
