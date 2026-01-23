@@ -401,3 +401,128 @@ header {
     padding: var(--space-sm);
     margin: 0;
 }
+
+/*=============================================
+    10. FOOTER SECTION
+=============================================*/
+
+footer {
+    background: var(--color-black);
+    color: var(--color-white);
+    margin-top: var(--space-xxl);
+    padding: var(--space-xl) var(--space-lg);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+    max-width: 1200px;
+    margin: 0 auto var(--space-lg);
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section h3 {
+    color: var(--color-white);
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-md);
+    border-bottom: 2px solid var(--color-blue);
+    padding-bottom: var(--space-sm);
+}
+
+.footer-section p {
+    color: #cccccc;
+    font-size: var(--font-size-sm);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list li {
+    color: #cccccc;
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-md);
+    line-height: 1.8;
+}
+
+.footer-list a {
+    color: var(--color-blue);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-list a:hover {
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: var(--color-blue);
+    border-radius: var(--border-radius-round);
+    color: var(--color-white);
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: var(--color-white);
+    color: var(--color-blue);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    border-top: 1px solid #333333;
+    padding-top: var(--space-md);
+    text-align: center;
+    color: #999999;
+    font-size: var(--font-size-sm);
+}
+
+/*=============================================
+    RESPONSIVE FOOTER
+=============================================*/
+
+@media (max-width: 1024px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: var(--space-lg) var(--space-md);
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    .footer-section h3 {
+        font-size: var(--font-size-base);
+    }
+
+    .footer-section p,
+    .footer-list li {
+        font-size: 1.2rem;
+    }
+}
