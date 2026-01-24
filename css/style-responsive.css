@@ -864,18 +864,14 @@ footer {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: space-between;
         gap: var(--space-xl);
         width: auto;
         padding: 0;
-        flex: 1;
     }
 
     .contact-header {
-        display: flex;
-        flex-direction: row;
-        gap: var(--space-xl);
-        text-align: left;
-        font-size: var(--font-size-sm);
+        display: none;
     }
 
     .burger-menu {
