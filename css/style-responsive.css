@@ -239,7 +239,7 @@ header {
     max-height: 500px;
 }
 
-.header-nav > a {
+.nav-link {
     text-decoration: none;
     color: var(--color-black);
     font-size: var(--font-size-base);
@@ -1004,7 +1004,7 @@ footer {
         padding: 0;
     }
 
-    .header-nav > a {
+    .nav-link {
         padding: 0;
         border: none;
         font-size: var(--font-size-base);
