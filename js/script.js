@@ -141,7 +141,6 @@ const allNavLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
 
 allNavLinks.forEach(link => {
   link.addEventListener('click', (e) => {
-    e.preventDefault();
     const targetId = link.getAttribute('href').substring(1);
     const targetSection = document.getElementById(targetId);
     
