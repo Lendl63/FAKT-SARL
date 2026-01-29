@@ -46,6 +46,28 @@ mobileMenu.addEventListener('click', (e) => {
   }
 });
 
+// Gérer le dropdown mobile
+const mobileDropdownToggle = document.getElementById('mobile-dropdown-toggle');
+const mobileDropdownMenu = document.getElementById('mobile-dropdown-menu');
+
+if (mobileDropdownToggle) {
+  mobileDropdownToggle.addEventListener('click', () => {
+    mobileDropdownMenu.classList.toggle('active');
+  });
+}
+
+// Fermer le dropdown quand on clique sur un lien
+if (mobileDropdownMenu) {
+  const mobileDropdownLinks = mobileDropdownMenu.querySelectorAll('.mobile-dropdown-link');
+  mobileDropdownLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileDropdownMenu.classList.remove('active');
+      mobileMenu.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    });
+  });
+}
+
 /* ===== 3. SCROLL ANIMATION & ACTIVE NAV ===== */
 const navLinks = document.querySelectorAll('.nav-link');
 const sections = ['about', 'commitment', 'trade', 'activitie', 'products-services', 'contact'];
